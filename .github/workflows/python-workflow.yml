@@ -13,6 +13,12 @@ jobs:
       with:
         python-version: 3.11
 
+    - name: Checkout to New Directory
+      uses: actions/checkout@v4
+      with:
+        repository: main
+
+
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
